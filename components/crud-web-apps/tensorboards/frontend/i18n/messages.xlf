@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+  <file source-language="en-US" datatype="plaintext" original="ng2.template">
+    <body>
+      <trans-unit id="1eede69e18c5ac9c0b0295b72cabb7e64e029e74" datatype="html">
+        <source>Hide</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">projects/kubeflow/src/lib/form/advanced-options/advanced-options.component.html</context>
+          <context context-type="linenumber">5</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7494021101290523062" datatype="html">
+        <source>高级选项</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">projects/kubeflow/src/lib/form/advanced-options/advanced-options.component.ts</context>
+          <context context-type="linenumber">19</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3ebbe3f1c691ec3184ac8c7a5f360706501e6b50" datatype="html">
+        <source>名称</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">projects/kubeflow/src/lib/form/name-namespace-inputs/name-input/name-input.component.html</context>
+          <context context-type="linenumber">2</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="63bf4861b88304bdabbae9a33c0f34fc8c6dc596" datatype="html">
+        <source>命名空间</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">projects/kubeflow/src/lib/form/name-namespace-inputs/name-namespace-inputs.component.html</context>
+          <context context-type="linenumber">12</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">projects/kubeflow/src/lib/form/name-namespace-inputs/name-namespace-inputs.component.html</context>
+          <context context-type="linenumber">15</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="65239f77938d9301519b3b6791cd9df460bb627a" datatype="html">
+        <source> Cannot be less than <x id="INTERPOLATION" equiv-text="{{ min }}"/>. </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">projects/kubeflow/src/lib/form/positive-number-input/positive-number-input.component.html</context>
+          <context context-type="linenumber">10,12</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6259832288014753417" datatype="html">
+        <source>Name must consist of lowercase alphanumeric characters or &apos;-&apos;,
+    start with an alphabetic character, and end with an alphanumeric character.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">projects/kubeflow/src/lib/form/validators.ts</context>
+          <context context-type="linenumber">32,33</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1103503203878293502" datatype="html">
+        <source>名称过长</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">projects/kubeflow/src/lib/form/validators.ts</context>
+          <context context-type="linenumber">105</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6364255942977037330" datatype="html">
+        <source>名称不能为空</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">projects/kubeflow/src/lib/form/validators.ts</context>
+          <context context-type="linenumber">107</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2061ce2524f31b7754bd310c6b0ad194b563767c" datatype="html">
+        <source>Select Namespace</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">projects/kubeflow/src/lib/namespace-select/namespace-select.component.html</context>
+          <context context-type="linenumber">4</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3294686077659093992" datatype="html">
+        <source>Namespace</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">projects/kubeflow/src/lib/resource-table/table/utils.ts</context>
+          <context context-type="linenumber">4</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3862207452684082108" datatype="html">
+        <source>An error occurred: <x id="PH" equiv-text="error"/></source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">projects/kubeflow/src/lib/services/backend/backend.service.ts</context>
+          <context context-type="linenumber">144</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1292256390007124036" datatype="html">
+        <source>Client error: <x id="PH" equiv-text="error.error.message"/></source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">projects/kubeflow/src/lib/services/backend/backend.service.ts</context>
+          <context context-type="linenumber">148</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8194451610848887333" datatype="html">
+        <source>Could not connect to the backend.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">projects/kubeflow/src/lib/services/backend/backend.service.ts</context>
+          <context context-type="linenumber">155</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4553983244211420347" datatype="html">
+        <source>Unexpected error encountered</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">projects/kubeflow/src/lib/services/backend/backend.service.ts</context>
+          <context context-type="linenumber">167</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="0c0be57aaf30414531e79157a45e0fc3fd6b637b" datatype="html">
+        <source>DISMISS</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">projects/kubeflow/src/lib/snack-bar/component/snack-bar.component.html</context>
+          <context context-type="linenumber">8</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2519615396083382534" datatype="html">
+        <source>Select a namespace in which to create a new <x id="PH" equiv-text="resourceName"/>.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">projects/kubeflow/src/lib/title-actions-toolbar/types.ts</context>
+          <context context-type="linenumber">62</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="83c2e96a8b8294367e16d0bcf4b1a6c953d81094" datatype="html">
+        <source>配置</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/form/form-configurations/form-configurations.component.html</context>
+          <context context-type="linenumber">1</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6b7ffda6aa2b8d622e5958aef8f119528753dd5d" datatype="html">
+        <source> 配置 </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/form/form-configurations/form-configurations.component.html</context>
+          <context context-type="linenumber">3</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="667ef50e3be64bca0ed514fcd9e3f85b9121cbe2" datatype="html">
+        <source>新向量板</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/form/form.component.html</context>
+          <context context-type="linenumber">4</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8e0f8eea7610056c395a8d5e0e2c5f66acb15669" datatype="html">
+        <source>创建一个新向量板</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/form/form.component.html</context>
+          <context context-type="linenumber">5</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="139e270ad4b02b2e8d5e32c1e7aa9cd91145d7b8" datatype="html">
+        <source> 对象存储 </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/form/form.component.html</context>
+          <context context-type="linenumber">25,27</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6a37336ff34b005579c9945589599dc4a199e889" datatype="html">
+        <source> PVC </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/form/form.component.html</context>
+          <context context-type="linenumber">33,35</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ea086fefaa1abc9b95a3c19887cd4d7fafc69cb3" datatype="html">
+        <source>PVC 名称</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/form/form.component.html</context>
+          <context context-type="linenumber">43</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8274971204ffe06bdeb65089dc74a8b6145d80f3" datatype="html">
+        <source>挂载路径</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/form/form.component.html</context>
+          <context context-type="linenumber">56</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="439ea1e30d9586aa35b3e5038045fbcc0664f664" datatype="html">
+        <source>ex: mount/to/path</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/form/form.component.html</context>
+          <context context-type="linenumber">60</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="72f0758740f4885be169b64307ccfcaba1f6a6cc" datatype="html">
+        <source>对象存储链接</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/form/form.component.html</context>
+          <context context-type="linenumber">71</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="e09f3e04574117d687385c94df3a8e02a4de9434" datatype="html">
+        <source> 创建 </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/form/form.component.html</context>
+          <context context-type="linenumber">84,86</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="c0d665c21e1f5d4eba20083c1c933e01602006b9" datatype="html">
+        <source> 取消 </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/form/form.component.html</context>
+          <context context-type="linenumber">88,90</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="945863999624144498" datatype="html">
+        <source>状态</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/index/config.ts</context>
+          <context context-type="linenumber">15</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6673753548733826795" datatype="html">
+        <source>名称</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/index/config.ts</context>
+          <context context-type="linenumber">22</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2654798840655120116" datatype="html">
+        <source>创建于</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/index/config.ts</context>
+          <context context-type="linenumber">33</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2089113786046552062" datatype="html">
+        <source>日志路径</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/index/config.ts</context>
+          <context context-type="linenumber">43</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5706016946179593756" datatype="html">
+        <source>连接到张量板服务器</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/index/config.ts</context>
+          <context context-type="linenumber">62</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1025789312700336103" datatype="html">
+        <source>连接</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/index/config.ts</context>
+          <context context-type="linenumber">65</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2950657769146168828" datatype="html">
+        <source>删除向量板</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/index/config.ts</context>
+          <context context-type="linenumber">69</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="df2cbbf81852e1d11c54ba14a8b4c14d6c77e06a" datatype="html">
+        <source>张量板</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/index/index.component.html</context>
+          <context context-type="linenumber">3</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2285831208692671630" datatype="html">
+        <source>新张量板</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/index/index.component.ts</context>
+          <context context-type="linenumber">45</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1096514963183218259" datatype="html">
+        <source>向量板</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/index/index.component.ts</context>
+          <context context-type="linenumber">68</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5128777223603559306" datatype="html">
+        <source>张量板被成功提交。</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/index/index.component.ts</context>
+          <context context-type="linenumber">109</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4028570762523468244" datatype="html">
+        <source>你确认你要删除张量板: <x id="PH" equiv-text="tensorboard.name"/> 吗?</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/index/index.component.ts</context>
+          <context context-type="linenumber">121</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1329392431125715413" datatype="html">
+        <source>删除</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/index/index.component.ts</context>
+          <context context-type="linenumber">123</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5601254587589034652" datatype="html">
+        <source>取消</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/index/index.component.ts</context>
+          <context context-type="linenumber">125</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4937313009271811860" datatype="html">
+        <source>删除中</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/index/index.component.ts</context>
+          <context context-type="linenumber">127</context>
+        </context-group>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

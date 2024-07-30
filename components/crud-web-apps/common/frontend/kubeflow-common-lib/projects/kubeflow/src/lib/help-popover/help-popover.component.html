@@ -1,0 +1,74 @@
+<span
+  [libPopover]="helperTpl"
+  [libPopoverPosition]="popoverPosition"
+  [libPopoverHideDelay]="100"
+  [libPopoverShowDelay]="100"
+  class="truncate"
+>
+  <mat-icon>help</mat-icon>
+</span>
+
+<ng-template #helperTpl>
+  <div class="helper-text">
+    <p>
+      通过输入一个属性名称或仅仅一个之创建一个过滤器以缩小你的结果范围。
+    </p>
+    <p>
+      例子:
+      <mat-chip class="mat-chip-blue">
+        名称: 过滤器值
+        <button matChipRemove>
+          <mat-icon>cancel</mat-icon>
+        </button>
+      </mat-chip>
+    </p>
+    <p>
+      通过输入双引号以过滤空值：
+      <mat-chip class="mat-chip-blue">
+        名称: ""
+        <button matChipRemove>
+          <mat-icon>cancel</mat-icon>
+        </button>
+      </mat-chip>
+    </p>
+    <mat-divider></mat-divider>
+    <ng-template [ngIf]="showStatus">
+      <p><b>状态</b></p>
+      <p>基于对象的状态过滤，使用:</p>
+      <ul>
+        <li>在提示信息里显示的值</li>
+        <li>
+          状态类型(即
+          <i
+            >就绪, 等待, 警告, 错误, 不可用, 未初始化,
+            终止中, 已终止</i
+          >)
+        </li>
+      </ul>
+    </ng-template>
+    <mat-divider></mat-divider>
+    <ng-template [ngIf]="showDate">
+      <p><b>日期</b></p>
+      <p>基于下述过滤时间戳的值:</p>
+      <ul>
+        <li>
+          <span
+            > "-" 字符用于空的日期值:
+            <mat-chip class="mat-chip-blue">
+              创建于: -
+              <button matChipRemove>
+                <mat-icon>cancel</mat-icon>
+              </button>
+            </mat-chip>
+          </span>
+        </li>
+        <li>
+          相对时间文本，显示在列中(即 <i>若干月前</i>)
+        </li>
+        <li>
+          时间戳的一部分，显示在提示信息的 UTC 部分
+        </li>
+      </ul>
+    </ng-template>
+  </div>
+</ng-template>

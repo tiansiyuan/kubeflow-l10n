@@ -1,0 +1,83 @@
+<div class="form--container" mat-dialog-content>
+  <form novalidate (ngSubmit)="onSubmit()" [formGroup]="formCtrl">
+    <lib-form-section
+      title="新卷"
+      text="创建一个新的空卷。"
+      icon="fa:fas:hdd"
+      i18n-title
+      i18n-text
+    >
+    </lib-form-section>
+
+    <!--Name / Namespace-->
+    <lib-form-name-namespace-inputs
+      [nameControl]="formCtrl.get('name')"
+      [namespaceControl]="formCtrl.get('namespace')"
+      resourceName="Volume"
+      i18n-resourceName
+      [existingNames]="pvcNames"
+    >
+    </lib-form-name-namespace-inputs>
+
+    <!--Snapshot Chooser-->
+    <mat-form-field
+      *ngIf="formCtrl.get('type').value === 'snapshot'"
+      appearance="outline"
+      class="wide"
+    >
+      <mat-label i18n>快照</mat-label>
+      <mat-select formControlName="snapshot"> </mat-select>
+    </mat-form-field>
+
+    <!--Size-->
+    <lib-positive-number-input
+      [sizeControl]="formCtrl.get('size')"
+      min="1"
+      step="1"
+      label="论 Gi 的卷大小"
+    ></lib-positive-number-input>
+
+    <!--Storage Class-->
+    <mat-form-field appearance="outline" class="wide">
+      <mat-label i18n>存储类</mat-label>
+      <mat-select formControlName="class" data-cy-form-control-name-class>
+        <mat-option value="{none}" i18n>无</mat-option>
+        <mat-option *ngFor="let sc of storageClasses" [value]="sc">
+          {{ sc }}
+        </mat-option>
+      </mat-select>
+    </mat-form-field>
+
+    <!--Access Mode-->
+    <mat-form-field appearance="outline" class="wide">
+      <mat-label i18n>存取模式</mat-label>
+      <mat-select formControlName="mode">
+        <mat-option value="ReadWriteOnce" i18n>读写一次</mat-option>
+        <mat-option value="ReadOnlyMany" i18n>只读多次</mat-option>
+        <mat-option value="ReadWriteMany" i18n>读写多次</mat-option>
+      </mat-select>
+    </mat-form-field>
+
+    <button
+      mat-raised-button
+      color="primary"
+      class="form--button-margin"
+      type="submit"
+      [disabled]="!formCtrl.valid || blockSubmit"
+      data-cy-button-create
+      i18n
+    >
+      创建
+    </button>
+
+    <button
+      mat-raised-button
+      type="button"
+      (click)="onCancel()"
+      i18n
+      data-cy-button-cancel
+    >
+      取消
+    </button>
+  </form>
+</div>

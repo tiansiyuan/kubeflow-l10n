@@ -1,0 +1,12 @@
+<label id="access-mode-label" class="form-title" i18n> 存取模式</label>
+<mat-radio-group [formControl]="mode" aria-labelledby="access-mode-label">
+  <mat-radio-button value="ReadWriteOnce" i18n>
+    读写一次
+  </mat-radio-button>
+
+  <mat-radio-button value="ReadOnlyMany" i18n>只读多次</mat-radio-button>
+
+  <mat-radio-button value="ReadWriteMany" i18n data-cy="ReadWriteMany">
+    读写多次
+  </mat-radio-button>
+</mat-radio-group>

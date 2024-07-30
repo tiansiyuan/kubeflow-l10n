@@ -1,0 +1,5 @@
+<mat-form-field class="wide" appearance="outline">
+  <mat-label i18n>名称</mat-label>
+  <input matInput placeholder="名称" [formControl]="nameControl" />
+  <mat-error>{{ nameError() }}</mat-error>
+</mat-form-field>

@@ -1,0 +1,112 @@
+<lib-form-section
+  title="工作区卷"
+  i18n-title
+  text="将被挂载到你的家目录的卷。"
+  i18n-text
+>
+  <mat-accordion>
+    <mat-expansion-panel
+      hideToggle
+      *ngIf="!volGroup.disabled"
+      (opened)="panelOpen = true"
+      (closed)="panelOpen = false"
+      data-cy="workspace volume"
+    >
+      <mat-expansion-panel-header>
+        <mat-panel-title>
+          {{ getVolumeTitle(volGroup.value) }}
+        </mat-panel-title>
+
+        <mat-panel-description>
+          <ng-container *ngIf="volGroup.get('newPvc')">
+            <div
+              class="pvc-name truncate"
+              [matTooltip]="getVolumeName(volGroup.value)"
+              data-cy="volume name header"
+            >
+              {{ getVolumeName(volGroup.value) }},
+            </div>
+            <div class="pvc-type">{{ getNewVolumeType(volGroup.value) }},</div>
+            <div>{{ getNewVolumeSize(volGroup.value) }}</div>
+          </ng-container>
+
+          <ng-container *ngIf="volGroup.get('existingSource')">
+            <div
+              class="vol-name truncate"
+              [matTooltip]="getVolumeName(volGroup.value)"
+            >
+              {{ getVolumeName(volGroup.value) }}
+            </div>
+          </ng-container>
+
+          <div class="icons">
+            <mat-icon
+              *ngIf="!readonly"
+              (click)="onDelete($event)"
+              matTooltip="删除卷"
+              i18n-matTooltip
+              class="delete-icon"
+            >
+              删除
+            </mat-icon>
+
+            <mat-icon
+              *ngIf="!panelOpen"
+              matTooltip="显示卷细节"
+              i18n-matTooltip
+            >
+              扩展更多
+            </mat-icon>
+
+            <mat-icon
+              *ngIf="panelOpen"
+              matTooltip="隐藏卷细节"
+              i18n-matTooltip
+            >
+              减少扩展
+            </mat-icon>
+          </div>
+        </mat-panel-description>
+      </mat-expansion-panel-header>
+
+      <div [class.readonly]="readonly">
+        <app-existing-volume
+          *ngIf="volGroup.get('existingSource')"
+          [volGroup]="volGroup"
+        ></app-existing-volume>
+
+        <app-new-volume
+          *ngIf="volGroup.get('newPvc')"
+          [volGroup]="volGroup"
+          [externalName]="externalName"
+        ></app-new-volume>
+
+        <app-volume-mount [volGroup]="volGroup"></app-volume-mount>
+      </div>
+    </mat-expansion-panel>
+  </mat-accordion>
+
+  <div class="volume-buttons">
+    <button
+      *ngIf="volGroup.disabled || readonly"
+      type="button"
+      color="primary"
+      (click)="addNewVolume()"
+      mat-stroked-button
+      i18n
+    >
+      + 添加新卷
+    </button>
+
+    <button
+      *ngIf="volGroup.disabled || readonly"
+      type="button"
+      color="primary"
+      (click)="attachExistingVolume()"
+      mat-stroked-button
+      i18n
+    >
+      + 附加存在的卷
+    </button>
+  </div>
+</lib-form-section>

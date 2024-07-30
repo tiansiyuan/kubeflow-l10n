@@ -1,0 +1,19 @@
+<div class="form-title" i18n>存储类</div>
+
+<mat-checkbox
+  i18n
+  [checked]="scControl?.disabled"
+  (change)="useDefaultSC($event.checked)"
+>
+  使用默认的类
+</mat-checkbox>
+
+<mat-form-field appearance="outline" class="wide" *ngIf="scControl">
+  <mat-label i18n>类</mat-label>
+  <mat-select [formControl]="scControl">
+    <mat-option value="" i18n>空存储类</mat-option>
+    <mat-option *ngFor="let sc of storageClasses" [value]="sc">
+      {{ sc }}
+    </mat-option>
+  </mat-select>
+</mat-form-field>
