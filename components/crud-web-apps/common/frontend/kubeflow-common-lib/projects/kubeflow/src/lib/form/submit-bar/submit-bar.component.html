@@ -9,7 +9,7 @@
     [disabled]="createDisabled"
     data-cy-submit-bar-create
   >
-    CREATE
+    创建
   </button>
 
   <button
@@ -20,7 +20,7 @@
   >
     <div class="waiting-button-wrapper">
       <mat-spinner diameter="16"></mat-spinner>
-      <div>CREATING</div>
+      <div>创建中</div>
     </div>
   </button>
 
@@ -29,13 +29,13 @@
     (click)="cancel.emit(true)"
     data-cy-submit-bar-cancel
   >
-    CANCEL
+    取消
   </button>
 
   <div class="flex text-area" *ngIf="allowYAMLEditing">
     <button class="btn-link" (click)="yaml.emit(true)" data-cy-submit-bar-edit>
-      Edit
+      编辑
     </button>
-    <span> and submit YAML</span>
+    <span> 并提交 YAML</span>
   </div>
 </div>
